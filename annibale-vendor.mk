@@ -2401,7 +2401,6 @@ PRODUCT_PACKAGES += \
     libcneapiclient \
     libcneoplookup \
     libcneqmiutils \
-    libcodecclientmanager \
     libconfigdb \
     libcpion \
     libcv_common \
@@ -2590,7 +2589,6 @@ PRODUCT_PACKAGES += \
     libqc2audio_platform \
     libqc2audio_swaudiocodec \
     libqc2audio_utils \
-    libqc2vppfilter \
     libqcbor \
     libqcc_file_agent \
     libqcc_sdk \
@@ -2674,7 +2672,6 @@ PRODUCT_PACKAGES += \
     librcc \
     librcmask \
     libreffeature \
-    libresourcemanager \
     libril-db \
     libril-legacy \
     libril-qc-ltedirectdisc \
@@ -2754,8 +2751,6 @@ PRODUCT_PACKAGES += \
     libubwcp \
     libultrahdr_annibale \
     libultrasound_notify \
-    libvideoservice_utils \
-    libvideoserviceutils \
     libvideotxr \
     libvideoutils \
     libvmfilexfer \
@@ -3016,7 +3011,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.fx.tunnel-V1-ndk \
     vendor.xiaomi.hardware.micharge-V2-ndk \
     vendor.xiaomi.hardware.mlipay-V1-ndk \
-    vendor.xiaomi.hardware.videoservice-V7-ndk \
     vendor.xiaomi.sensor.camera-V1-ndk \
     vendor.xiaomi.sensor.citsensorservice-V1-ndk \
     vendor_lib_rfsa_adsp_activity_napp_header \
