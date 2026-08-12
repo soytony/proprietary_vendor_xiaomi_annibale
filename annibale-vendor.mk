@@ -3685,6 +3685,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.ims.rcsuce-V1.1-java \
     vendor.qti.ims.rcsuce-V1.2-java \
     vendor.qti.ims.rcsuceaidlservice-V1-java \
+    xiaomi-modem-common \
     ImsRtpService-aidl.xml \
     android.hardware.drm-service.xml \
     android.hardware.radio.config.xml \

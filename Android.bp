@@ -43985,6 +43985,15 @@ dex_import {
     system_ext_specific: true,
 }
 
+dex_import {
+    name: "xiaomi-modem-common",
+    owner: "xiaomi",
+    jars: [
+        "proprietary/system_ext/framework/xiaomi-modem-common.jar",
+    ],
+    system_ext_specific: true,
+}
+
 prebuilt_etc_xml {
     name: "ImsRtpService-aidl.xml",
     owner: "xiaomi",
