@@ -14820,6 +14820,49 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libui-xiaomi",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libui-xiaomi.so",
+            ],
+            shared_libs: [
+                "android.hardware.graphics.common-V7-ndk",
+                "android.hardware.graphics.allocator-V2-ndk",
+                "android.hardware.graphics.allocator@2.0",
+                "android.hardware.graphics.allocator@3.0",
+                "android.hardware.graphics.allocator@4.0",
+                "android.hardware.graphics.common@1.2",
+                "android.hardware.graphics.mapper@2.0",
+                "android.hardware.graphics.mapper@2.1",
+                "android.hardware.graphics.mapper@3.0",
+                "android.hardware.graphics.mapper@4.0",
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "libgralloctypes",
+                "libhidlbase",
+                "libsync",
+                "libutils",
+                "liblog",
+                "libvndksupport",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libultrahdr_annibale",
     owner: "xiaomi",
     strip: {
@@ -37941,7 +37984,7 @@ cc_prebuilt_library_shared {
                 "libsync",
                 "libhidlbase",
                 "libhidltransport",
-                "libui",
+                "libui-xiaomi",
                 "libcamera_metadata",
                 "libutils",
                 "libc",
@@ -40523,7 +40566,7 @@ cc_prebuilt_library_shared {
                 "libmicamera_adapter",
                 "libsync",
                 "libutils",
-                "libui",
+                "libui-xiaomi",
                 "libhidlbase",
                 "libprocessgroup",
                 "libcom.xiaomi.attribute",

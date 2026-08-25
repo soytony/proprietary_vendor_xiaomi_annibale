@@ -2749,6 +2749,7 @@ PRODUCT_PACKAGES += \
     libtlpd_logger \
     libtrustedapploader \
     libubwcp \
+    libui-xiaomi \
     libultrahdr_annibale \
     libultrasound_notify \
     libvideotxr \
