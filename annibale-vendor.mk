@@ -2261,7 +2261,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.diaghal-V1-ndk \
     android.hardware.bluetooth.audio-impl_prebuilt \
     android.hardware.common-V2-ndk_platform \
-    android.media.audio.common.types-V6-ndk \
     btaudio_offload_if \
     com.qualcomm.qti.dpm.api@1.0 \
     com.qualcomm.qti.imscmservice@1.0 \
