@@ -1804,17 +1804,27 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/annibale/proprietary/odm/lib64/bm5a79v08s13n89.bin:$(TARGET_COPY_OUT_ODM)/lib64/bm5a79v08s13n89.bin \
     vendor/xiaomi/annibale/proprietary/odm/lib64/bm5a79v08s13n90.bin:$(TARGET_COPY_OUT_ODM)/lib64/bm5a79v08s13n90.bin \
     vendor/xiaomi/annibale/proprietary/odm/lib64/camera/aon_front_i_1.pb:$(TARGET_COPY_OUT_ODM)/lib64/camera/aon_front_i_1.pb \
+    vendor/xiaomi/annibale/proprietary/odm/lib64/camera/aon_front_ii_1.pb:$(TARGET_COPY_OUT_ODM)/lib64/camera/aon_front_ii_1.pb \
     vendor/xiaomi/annibale/proprietary/odm/lib64/camera/aon_rear_i_2.pb:$(TARGET_COPY_OUT_ODM)/lib64/camera/aon_rear_i_2.pb \
+    vendor/xiaomi/annibale/proprietary/odm/lib64/camera/aon_rear_ii_2.pb:$(TARGET_COPY_OUT_ODM)/lib64/camera/aon_rear_ii_2.pb \
     vendor/xiaomi/annibale/proprietary/odm/lib64/camera/bitmlconfig.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/bitmlconfig.bin \
     vendor/xiaomi/annibale/proprietary/odm/lib64/camera/com.qti.ofe.profiledb.default.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.ofe.profiledb.default.bin \
+    vendor/xiaomi/annibale/proprietary/odm/lib64/camera/com.qti.sensormodule.annibale_aac_ov08f_ultra_ii.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.annibale_aac_ov08f_ultra_ii.bin \
+    vendor/xiaomi/annibale/proprietary/odm/lib64/camera/com.qti.sensormodule.annibale_aac_ov20b40_front_ii.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.annibale_aac_ov20b40_front_ii.bin \
     vendor/xiaomi/annibale/proprietary/odm/lib64/camera/com.qti.sensormodule.annibale_aac_ovx8000_wide_i.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.annibale_aac_ovx8000_wide_i.bin \
     vendor/xiaomi/annibale/proprietary/odm/lib64/camera/com.qti.sensormodule.annibale_ofilm_ov50m_tele3x_i.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.annibale_ofilm_ov50m_tele3x_i.bin \
+    vendor/xiaomi/annibale/proprietary/odm/lib64/camera/com.qti.sensormodule.annibale_ofilm_ovx8000_wide_ii.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.annibale_ofilm_ovx8000_wide_ii.bin \
     vendor/xiaomi/annibale/proprietary/odm/lib64/camera/com.qti.sensormodule.annibale_sunny_ov08f_ultra_i.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.annibale_sunny_ov08f_ultra_i.bin \
     vendor/xiaomi/annibale/proprietary/odm/lib64/camera/com.qti.sensormodule.annibale_sunny_ov20b40_front_i.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.annibale_sunny_ov20b40_front_i.bin \
+    vendor/xiaomi/annibale/proprietary/odm/lib64/camera/com.qti.sensormodule.annibale_sunny_ov50m_tele3x_ii.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.sensormodule.annibale_sunny_ov50m_tele3x_ii.bin \
+    vendor/xiaomi/annibale/proprietary/odm/lib64/camera/com.qti.tuned.annibale_aac_ov08f_ultra_ii.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.annibale_aac_ov08f_ultra_ii.bin \
+    vendor/xiaomi/annibale/proprietary/odm/lib64/camera/com.qti.tuned.annibale_aac_ov20b40_front_ii.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.annibale_aac_ov20b40_front_ii.bin \
     vendor/xiaomi/annibale/proprietary/odm/lib64/camera/com.qti.tuned.annibale_aac_ovx8000_wide_i.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.annibale_aac_ovx8000_wide_i.bin \
     vendor/xiaomi/annibale/proprietary/odm/lib64/camera/com.qti.tuned.annibale_ofilm_ov50m_tele3x_i.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.annibale_ofilm_ov50m_tele3x_i.bin \
+    vendor/xiaomi/annibale/proprietary/odm/lib64/camera/com.qti.tuned.annibale_ofilm_ovx8000_wide_ii.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.annibale_ofilm_ovx8000_wide_ii.bin \
     vendor/xiaomi/annibale/proprietary/odm/lib64/camera/com.qti.tuned.annibale_sunny_ov08f_ultra_i.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.annibale_sunny_ov08f_ultra_i.bin \
     vendor/xiaomi/annibale/proprietary/odm/lib64/camera/com.qti.tuned.annibale_sunny_ov20b40_front_i.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.annibale_sunny_ov20b40_front_i.bin \
+    vendor/xiaomi/annibale/proprietary/odm/lib64/camera/com.qti.tuned.annibale_sunny_ov50m_tele3x_ii.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.annibale_sunny_ov50m_tele3x_ii.bin \
     vendor/xiaomi/annibale/proprietary/odm/lib64/camera/com.qti.tuned.default.sun.bin:$(TARGET_COPY_OUT_ODM)/lib64/camera/com.qti.tuned.default.sun.bin \
     vendor/xiaomi/annibale/proprietary/odm/lib64/qsn1nrt430.bin:$(TARGET_COPY_OUT_ODM)/lib64/qsn1nrt430.bin \
     vendor/xiaomi/annibale/proprietary/odm/lib64/qsn1nrt43180.bin:$(TARGET_COPY_OUT_ODM)/lib64/qsn1nrt43180.bin \
@@ -3910,7 +3920,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libSnpeHtpV79Skel_so \
     vendor_lib64_camera_aon_front_i_1_pb \
+    vendor_lib64_camera_aon_front_ii_1_pb \
     vendor_lib64_camera_aon_rear_i_2_pb \
+    vendor_lib64_camera_aon_rear_ii_2_pb \
     vendor_lib64_camera_bitmlconfig_bin \
     vendor_lib64_camera_com_qti_ofe_profiledb_default_bin \
     vendor_lib64_hw_camera_qcom_so \
