@@ -118,6 +118,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/annibale/proprietary/odm/etc/camera/cameraopt.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameraopt.json \
     vendor/xiaomi/annibale/proprietary/odm/etc/camera/cameraopt_perf.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameraopt_perf.json \
     vendor/xiaomi/annibale/proprietary/odm/etc/camera/cameraopt_reclaim.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameraopt_reclaim.json \
+    vendor/xiaomi/annibale/proprietary/odm/etc/camera/cameraopt_reservemem.json:$(TARGET_COPY_OUT_ODM)/etc/camera/cameraopt_reservemem.json \
     vendor/xiaomi/annibale/proprietary/odm/etc/camera/camerascene.json:$(TARGET_COPY_OUT_ODM)/etc/camera/camerascene.json \
     vendor/xiaomi/annibale/proprietary/odm/etc/camera/camxoverridesettings.txt:$(TARGET_COPY_OUT_ODM)/etc/camera/camxoverridesettings.txt \
     vendor/xiaomi/annibale/proprietary/odm/etc/camera/com.xiaomi.dcal.w_07.t_01.golden:$(TARGET_COPY_OUT_ODM)/etc/camera/com.xiaomi.dcal.w_07.t_01.golden \
@@ -3421,6 +3422,7 @@ PRODUCT_PACKAGES += \
     libcalculator \
     libcamera_scene \
     libcameraheif \
+    libcameraopt_stub \
     libcamlog \
     libcamxcommonutils \
     libcamxcoreutils \

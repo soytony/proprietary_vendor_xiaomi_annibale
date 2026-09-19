@@ -47,7 +47,7 @@
     {
         "TrdCloudType":"TrdCloudEisEnable",
         "Mode": 1,
-        "ApkTable" :[]
+        "ApkTable" :["com.instagram.modal.TransparentModalActivity"]
     },
     {
         "TrdCloudType":"TrdCloud3rdAICameraEnable",

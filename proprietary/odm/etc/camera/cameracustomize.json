@@ -115,6 +115,7 @@
                          "com.whatsapp.camera.ui.CameraActivity",
                          "org.telegram.ui.LaunchActivity",
                          "com.facebook.messaging.montage.composer.MontageComposerActivity",
+                         "com.instagram.modal.TransparentModalActivity",
                          "com.yxcorp.gifshow.camera.record.CameraActivity"]
         },
         {
@@ -344,6 +345,11 @@
             "Mode": 0,
             "ApkTable" :["com.tencent.mobileqq",
                          "com.tencent.mm"]
+        },
+        {
+            "ApkFunctionType":"ThirdMutiFrameEffect",
+            "Mode": 0,
+            "ApkTable" :["com.whatsapp"]
         }
     ],
     "FEATURE_SWITCH":[
@@ -354,6 +360,10 @@
         {
             "FeatureType":"FrontDisableNFC",
             "State": 0
+        },
+        {
+            "FeatureType":"DoubleDisableNfc",
+            "State": 1
         }
     ]
 }

@@ -231,3 +231,8 @@ service vendor.modprobe /vendor/bin/vendor_modprobe.sh
     stdio_to_kmsg
     seclabel u:r:vendor_modprobe:s0
     oneshot
+
+on boot && property:persist.sys.stability.smartfocusio.v3=on
+    write /proc/mikblockd_enable 1
+on property:persist.sys.stability.smartfocusio.v3=off
+    write /proc/mikblockd_enable 0

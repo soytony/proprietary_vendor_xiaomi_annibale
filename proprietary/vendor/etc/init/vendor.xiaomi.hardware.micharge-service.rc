@@ -60,6 +60,7 @@ on property:dev.bootcomplete=1
     chown system system /sys/class/xm_power/charger/wls_rev_charge/wls_fw_state
     chown system system /sys/class/xm_power/charger/wls_basic_charge/set_rx_sleep
     chown system system /sys/class/xm_power/charger/charger_partition/charger_partition_poweroffmode
+    chown system system /sys/class/xm_power/charger/charger_partition/charger_partition_mishow
     chown system system /sys/class/xm_power/fuelgauge/strategy_fg/battery_num
     chown system system /sys/class/xm_power/typec/super_speed
     chown system system /sys/class/xm_power/typec/has_dp
@@ -152,6 +153,7 @@ on property:dev.bootcomplete=1
     chown system system /sys/class/xm_power/fg_master/pack_vendor
 
     chmod 0660 /sys/class/xm_power/charger/charger_partition/charger_partition_poweroffmode
+    chmod 0660 /sys/class/xm_power/charger/charger_partition/charger_partition_mishow
     chmod 0660 /sys/class/xm_power/charger/charge_interface/charge_enable
     chmod 0660 /sys/class/xm_power/charger/charge_interface/input_suspend
     chmod 0660 /sys/class/xm_power/charger/charge_interface/iin_limit

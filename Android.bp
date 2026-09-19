@@ -36771,6 +36771,39 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcameraopt_stub",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/odm/lib64/libcameraopt_stub.so",
+            ],
+            shared_libs: [
+                "libc++",
+                "libcutils",
+                "liblog",
+                "libsync",
+                "libhidlbase",
+                "libhidltransport",
+                "libui",
+                "libcamera_metadata",
+                "libutils",
+                "libcom.xiaomi.debug",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    device_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libcamlog",
     owner: "xiaomi",
     strip: {
@@ -39862,6 +39895,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "liblog",
                 "libGPTEE_vendor",
+                "libmisight",
                 "libc++",
                 "libc",
                 "libm",
@@ -40558,6 +40592,7 @@ cc_prebuilt_library_shared {
                 "libcom.xiaomi.pluginutils",
                 "libtinyxml2-v36",
                 "libmicamGlobalPool",
+                "libcameraopt_stub",
                 "libcameraopt",
                 "vendor.xiaomi.hardware.camera.synthetic-V1-ndk",
                 "vendor.xiaomi.hardware.camera.synthetic-impl",
@@ -40617,6 +40652,7 @@ cc_prebuilt_library_shared {
                 "libcom.xiaomi.sensorpolicy",
                 "libcom.xiaomi.pluginutils",
                 "libmicamera_hal_core",
+                "libcameraopt_stub",
                 "libvndksupport",
                 "android.hardware.graphics.allocator-V2-ndk",
                 "libc++",
