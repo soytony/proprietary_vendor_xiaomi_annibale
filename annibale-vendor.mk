@@ -1990,6 +1990,8 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/annibale/proprietary/vendor/etc/display/thermallevel_to_fps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/display/thermallevel_to_fps.xml \
     vendor/xiaomi/annibale/proprietary/vendor/etc/display/ubwc_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/ubwc_alignments.json \
     vendor/xiaomi/annibale/proprietary/vendor/etc/display/video_alignments.json:$(TARGET_COPY_OUT_VENDOR)/etc/display/video_alignments.json \
+    vendor/xiaomi/annibale/proprietary/vendor/etc/dolby/dax-default-spatializer.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default-spatializer.xml \
+    vendor/xiaomi/annibale/proprietary/vendor/etc/dolby/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml \
     vendor/xiaomi/annibale/proprietary/vendor/etc/dpm_vndr/vendor.dpm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/dpm_vndr/vendor.dpm.conf \
     vendor/xiaomi/annibale/proprietary/vendor/etc/encoder.serialized.8750.O3.bin:$(TARGET_COPY_OUT_VENDOR)/etc/encoder.serialized.8750.O3.bin \
     vendor/xiaomi/annibale/proprietary/vendor/etc/eva/facedetection/bias.dat:$(TARGET_COPY_OUT_VENDOR)/etc/eva/facedetection/bias.dat \
@@ -2021,6 +2023,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/annibale/proprietary/vendor/etc/init/dataadpl.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataadpl.rc \
     vendor/xiaomi/annibale/proprietary/vendor/etc/init/dataqti.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dataqti.rc \
     vendor/xiaomi/annibale/proprietary/vendor/etc/init/dcfd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dcfd.rc \
+    vendor/xiaomi/annibale/proprietary/vendor/etc/init/dms-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dms-service.rc \
     vendor/xiaomi/annibale/proprietary/vendor/etc/init/feature_enabler_client.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/feature_enabler_client.rc \
     vendor/xiaomi/annibale/proprietary/vendor/etc/init/hexlpservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hexlpservice.rc \
     vendor/xiaomi/annibale/proprietary/vendor/etc/init/hlosminkdaemon.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hlosminkdaemon.rc \
@@ -2424,6 +2427,7 @@ PRODUCT_PACKAGES += \
     libconfigdb \
     libcpion \
     libcv_common \
+    libdapparamstorage \
     libdataitems \
     libdemura_oem_plugin \
     libdfintf \
@@ -2438,6 +2442,9 @@ PRODUCT_PACKAGES += \
     libdisplayfeatureservice \
     libdisplayqos \
     libdisplayskuutils \
+    libdlbdsservice \
+    libdlbpreg \
+    libdmshal \
     libdpp_manager \
     libdpps \
     libdrmfs \
@@ -2740,6 +2747,7 @@ PRODUCT_PACKAGES += \
     libsnsutils \
     libsoc_helper \
     libsoc_helper_jni \
+    libspatializerparamstorage \
     libspcom \
     libspl \
     libssc_default_listener \
@@ -2863,6 +2871,7 @@ PRODUCT_PACKAGES += \
     libaudiopreprocessing \
     libdynproc \
     libeffectproxy \
+    libhwdapaidl \
     libldnhncr \
     libquasar \
     vendor.display.color@1.0 \
@@ -2874,6 +2883,8 @@ PRODUCT_PACKAGES += \
     vendor.display.color@1.6 \
     vendor.display.color@1.7 \
     vendor.display.postproc@1.0 \
+    vendor.dolby.dms-V1-ndk \
+    vendor.dolby.hardware.dms@2.0 \
     vendor.libdpmctmgr \
     vendor.libdpmfdmgr \
     vendor.libdpmframework \
@@ -3732,6 +3743,7 @@ PRODUCT_PACKAGES += \
     dataconnection-saidl.xml \
     datafactoryservice-saidl.xml \
     deviceinfo-saidl.xml \
+    dms-service.xml \
     dpm-saidl.xml \
     imsdcservice-saidl.xml \
     manifest_btaudiocoreservices_qti.xml \
@@ -3819,6 +3831,7 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service-qti \
     qcrilNrd \
     sxrservice \
+    vendor.dolby.dms.service \
     vendor.qti.hardware.alarm-service \
     vendor.qti.hardware.capabilityconfigstore-service \
     vendor.qti.hardware.display.allocator-service \
