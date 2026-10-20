@@ -2100,6 +2100,7 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/annibale/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/xiaomi/annibale/proprietary/vendor/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.displayfeature_aidl-service.rc \
     vendor/xiaomi/annibale/proprietary/vendor/etc/init/vendor.xiaomi.hardware.micharge-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.micharge-service.rc \
+    vendor/xiaomi/annibale/proprietary/vendor/etc/init/vendor.xiaomi.hardware.misys.core-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.xiaomi.hardware.misys.core-service.rc \
     vendor/xiaomi/annibale/proprietary/vendor/etc/init/vmmgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vmmgr.rc \
     vendor/xiaomi/annibale/proprietary/vendor/etc/init/vppservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vppservice.rc \
     vendor/xiaomi/annibale/proprietary/vendor/etc/init/wfdvndservice.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wfdvndservice.rc \
@@ -2424,6 +2425,10 @@ PRODUCT_PACKAGES += \
     libcneapiclient \
     libcneoplookup \
     libcneqmiutils \
+    libcodec2_aidl_annibale \
+    libcodec2_hal_common_annibale \
+    libcodec2_hidl_plugin_annibale \
+    libcodec2_vndk_annibale \
     libconfigdb \
     libcpion \
     libcv_common \
@@ -3034,6 +3039,7 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.aidl.intentaware-V1-ndk_platform \
     vendor.xiaomi.hardware.aidl.mtdservice-V1-ndk_platform \
     vendor.xiaomi.hardware.aon-V1-ndk \
+    vendor.xiaomi.hardware.blackbox-V1-ndk \
     vendor.xiaomi.hardware.camera.injection-V1-ndk \
     vendor.xiaomi.hardware.camera.injection-client \
     vendor.xiaomi.hardware.camera.injection-service \
@@ -3042,6 +3048,8 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.display.mihwcextension-V1-ndk \
     vendor.xiaomi.hardware.fx.tunnel-V1-ndk \
     vendor.xiaomi.hardware.micharge-V2-ndk \
+    vendor.xiaomi.hardware.misys.common-V3-ndk \
+    vendor.xiaomi.hardware.misys.core-V1-ndk \
     vendor.xiaomi.hardware.mlipay-V1-ndk \
     vendor.xiaomi.sensor.camera-V1-ndk \
     vendor.xiaomi.sensor.citsensorservice-V1-ndk \
@@ -3057,6 +3065,7 @@ PRODUCT_PACKAGES += \
     lib-imsvt \
     lib-imsvtextutils \
     lib-imsvtutils \
+    libcamera_algoup_jni.xiaomi \
     libdiag_system \
     libimscamera_jni \
     libimsmedia_jni \
@@ -3746,6 +3755,7 @@ PRODUCT_PACKAGES += \
     dms-service.xml \
     dpm-saidl.xml \
     imsdcservice-saidl.xml \
+    manifest_blackbox.xml \
     manifest_btaudiocoreservices_qti.xml \
     mapper.qti.xml \
     mwqem-saidl.xml \
@@ -3791,6 +3801,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.syshealthmon-service.xml \
     vendor.xiaomi.hardware.displayfeature_aidl-service.xml \
     vendor.xiaomi.hardware.micharge.xml \
+    vendor.xiaomi.hardware.misys.common.xml \
+    vendor.xiaomi.hardware.misys.core.xml \
     vendor.xiaomi.hardware.quickcamera.xml \
     vendor.qti.qccsyshal_aidl-service.xml \
     vendor.qti.qesdsys.service.xml \
@@ -3849,6 +3861,8 @@ PRODUCT_PACKAGES += \
     vendor.qti.sla.service@2.0-service \
     vendor.xiaomi.hardware.displayfeature_aidl-service \
     vendor.xiaomi.hardware.micharge-service \
+    vendor.xiaomi.hardware.misys.core-service \
+    hypsys_vendor \
     ims-dataservice-daemon \
     ims_rtp_daemon \
     imsdaemon \

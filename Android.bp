@@ -4399,6 +4399,157 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libcodec2_aidl_annibale",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_aidl_annibale.so",
+            ],
+            shared_libs: [
+                "server_configurable_flags",
+                "libaconfig_storage_read_api_cc",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.media.bufferpool2-V2-ndk",
+                "android.hardware.media.c2-V1-ndk",
+                "libbase",
+                "libbinder_ndk",
+                "libcodec2",
+                "libcodec2_hal_common_annibale",
+                "libcodec2_vndk_annibale",
+                "libcutils",
+                "libhidlbase",
+                "liblog",
+                "libnativewindow",
+                "libstagefright_aidl_bufferpool2",
+                "libstagefright_bufferpool@2.0.1",
+                "libui",
+                "libutils",
+                "libcodec2_hidl_plugin_annibale",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_hal_common_annibale",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_hal_common_annibale.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk_annibale",
+                "liblog",
+                "libstagefright_foundation",
+                "server_configurable_flags",
+                "libaconfig_storage_read_api_cc",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_hidl_plugin_annibale",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_hidl_plugin_annibale.so",
+            ],
+            shared_libs: [
+                "libbase",
+                "libcodec2",
+                "libcodec2_vndk_annibale",
+                "liblog",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcodec2_vndk_annibale",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libcodec2_vndk_annibale.so",
+            ],
+            shared_libs: [
+                "server_configurable_flags",
+                "libaconfig_storage_read_api_cc",
+                "android.hardware.graphics.bufferqueue@2.0",
+                "android.hardware.graphics.common@1.2",
+                "android.hardware.common-V2-ndk",
+                "android.hardware.common.fmq-V1-ndk",
+                "android.hardware.media.bufferpool@2.0",
+                "android.hardware.media.bufferpool2-V2-ndk",
+                "android.hardware.media.c2-V1-ndk",
+                "libbase",
+                "libbinder_ndk",
+                "libcutils",
+                "libdmabufheap",
+                "libfmq",
+                "libgralloctypes",
+                "libhidlbase",
+                "libion",
+                "liblog",
+                "libnativewindow",
+                "libstagefright_foundation",
+                "libstagefright_bufferpool@2.0.1",
+                "libstagefright_aidl_bufferpool2",
+                "libui",
+                "libutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libconfigdb",
     owner: "xiaomi",
     strip: {
@@ -9777,7 +9928,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libcodec2_vndk",
+                "libcodec2_vndk_annibale",
                 "libc++",
                 "libc",
                 "libm",
@@ -9805,7 +9956,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libcodec2_vndk",
+                "libcodec2_vndk_annibale",
                 "libqc2audio_base",
                 "libqc2audio_utils",
                 "libqc2audio_platform",
@@ -9836,7 +9987,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libcodec2_vndk",
+                "libcodec2_vndk_annibale",
                 "libqc2audio_base",
                 "libqc2audio_hooks",
                 "libqc2audio_utils",
@@ -9869,7 +10020,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libcodec2_vndk",
+                "libcodec2_vndk_annibale",
                 "libqc2audio_base",
                 "libc++",
                 "libc",
@@ -9902,7 +10053,7 @@ cc_prebuilt_library_shared {
                 "libqc2audio_platform",
                 "libqc2audio_utils",
                 "libqc2audio_basecodec",
-                "libcodec2_vndk",
+                "libcodec2_vndk_annibale",
                 "libstagefright_foundation",
                 "libpalclient",
                 "libc++",
@@ -9932,7 +10083,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libcodec2_vndk",
+                "libcodec2_vndk_annibale",
                 "libqc2audio_base",
                 "libc++",
                 "libc",
@@ -9965,7 +10116,7 @@ cc_prebuilt_library_shared {
                 "libqc2audio_platform",
                 "libqc2audio_utils",
                 "libqc2audio_basecodec",
-                "libcodec2_vndk",
+                "libcodec2_vndk_annibale",
                 "libc++",
                 "libc",
                 "libm",
@@ -9993,7 +10144,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libcodec2_vndk",
+                "libcodec2_vndk_annibale",
                 "libqc2audio_base",
                 "libqc2audio_platform",
                 "libc++",
@@ -10175,7 +10326,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libcodec2_vndk",
+                "libcodec2_vndk_annibale",
                 "libc++",
                 "libc",
                 "libm",
@@ -10203,7 +10354,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libcodec2_vndk",
+                "libcodec2_vndk_annibale",
                 "libqcodec2_base",
                 "libqcodec2_utils",
                 "libqcodec2_platform",
@@ -10236,7 +10387,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libcodec2_vndk",
+                "libcodec2_vndk_annibale",
                 "libqcodec2_base",
                 "libqcodec2_hooks",
                 "libqcodec2_utils",
@@ -10271,7 +10422,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libcodec2_vndk",
+                "libcodec2_vndk_annibale",
                 "libqcodec2_base",
                 "libqcodec2_utils",
                 "libqcodec2_basecodec",
@@ -10306,7 +10457,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libcodec2_vndk",
+                "libcodec2_vndk_annibale",
                 "libqcodec2_base",
                 "libqcodec2_utils",
                 "libqcodec2_basecodec",
@@ -10338,7 +10489,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libcodec2_vndk",
+                "libcodec2_vndk_annibale",
                 "libqcodec2_base",
                 "libc++",
                 "libc",
@@ -10367,7 +10518,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libcodec2_vndk",
+                "libcodec2_vndk_annibale",
                 "libqcodec2_base",
                 "libqcodec2_utils",
                 "libqcodec2_basecodec",
@@ -10401,7 +10552,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libcodec2_vndk",
+                "libcodec2_vndk_annibale",
                 "libqcodec2_base",
                 "libqcodec2_utils",
                 "libqcodec2_basecodec",
@@ -10435,7 +10586,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libcodec2_vndk",
+                "libcodec2_vndk_annibale",
                 "libqcodec2_base",
                 "libjsoncpp",
                 "qti.video.utils.videobufferlayout",
@@ -10466,7 +10617,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libcodec2_vndk",
+                "libcodec2_vndk_annibale",
                 "libqcodec2_base",
                 "libqcodec2_utils",
                 "libqcodec2_basecodec",
@@ -10498,7 +10649,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libcodec2_vndk",
+                "libcodec2_vndk_annibale",
                 "libqcodec2_base",
                 "libqcodec2_platform",
                 "libhidlbase",
@@ -10546,7 +10697,7 @@ cc_prebuilt_library_shared {
                 "libqcodec2_platform",
                 "libqcodec2_utils",
                 "libqcodec2_basecodec",
-                "libcodec2_vndk",
+                "libcodec2_vndk_annibale",
                 "libvmmem",
                 "qti.video.utils.videobufferlayout",
                 "libc++",
@@ -12873,8 +13024,8 @@ cc_prebuilt_library_shared {
                 "server_configurable_flags",
                 "libaconfig_storage_read_api_cc",
                 "liblog",
-                "libcodec2_hal_common",
-                "libcodec2_vndk",
+                "libcodec2_hal_common_annibale",
+                "libcodec2_vndk_annibale",
                 "libEGL",
                 "libGLESv1_CM",
                 "libGLESv2",
@@ -14304,7 +14455,7 @@ cc_prebuilt_library_shared {
                 "liblog",
                 "libutils",
                 "libcutils",
-                "libcodec2_vndk",
+                "libcodec2_vndk_annibale",
                 "libmediandk",
                 "qti.video.utils.videobufferlayout",
                 "libc++",
@@ -15058,7 +15209,7 @@ cc_prebuilt_library_shared {
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libcodec2_vndk",
+                "libcodec2_vndk_annibale",
                 "libnativewindow",
                 "libhidlbase",
                 "libc++",
@@ -22207,6 +22358,31 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.hardware.blackbox-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.xiaomi.hardware.blackbox-V1-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "vendor.xiaomi.hardware.camera.injection-V1-ndk",
     owner: "xiaomi",
     strip: {
@@ -22425,6 +22601,56 @@ cc_prebuilt_library_shared {
         android_arm64: {
             srcs: [
                 "proprietary/vendor/lib64/vendor.xiaomi.hardware.micharge-V2-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.hardware.misys.common-V3-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.xiaomi.hardware.misys.common-V3-ndk.so",
+            ],
+            shared_libs: [
+                "libbinder_ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.xiaomi.hardware.misys.core-V1-ndk",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/vendor.xiaomi.hardware.misys.core-V1-ndk.so",
             ],
             shared_libs: [
                 "libbinder_ndk",
@@ -22709,6 +22935,46 @@ cc_prebuilt_library_shared {
                 "libcutils",
                 "liblog",
                 "libdiag_system",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+    system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamera_algoup_jni.xiaomi",
+    owner: "xiaomi",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system_ext/lib64/libcamera_algoup_jni.xiaomi.so",
+            ],
+            shared_libs: [
+                "libbinder",
+                "libcamera_client",
+                "libcamera_metadata",
+                "libcutils",
+                "libgui",
+                "liblog",
+                "libutils",
+                "libvndksupport",
+                "libandroid",
+                "libandroid_runtime",
+                "libbase",
+                "libmedia_jni_utils",
+                "libnativehelper",
+                "libnativewindow",
+                "libui",
+                "android.hidl.token@1.0-utils",
                 "libc++",
                 "libc",
                 "libm",
@@ -44537,6 +44803,15 @@ prebuilt_etc_xml {
 }
 
 prebuilt_etc_xml {
+    name: "manifest_blackbox.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/manifest_blackbox.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
     name: "manifest_btaudiocoreservices_qti.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/manifest_btaudiocoreservices_qti.xml",
@@ -44936,6 +45211,24 @@ prebuilt_etc_xml {
     name: "vendor.xiaomi.hardware.micharge.xml",
     owner: "xiaomi",
     src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.micharge.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.xiaomi.hardware.misys.common.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys.common.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "vendor.xiaomi.hardware.misys.core.xml",
+    owner: "xiaomi",
+    src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.misys.core.xml",
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
@@ -46327,12 +46620,12 @@ cc_prebuilt_binary {
                 "libaconfig_storage_read_api_cc",
                 "libbase",
                 "libcodec2",
-                "libcodec2_hal_common",
-                "libcodec2_aidl",
+                "libcodec2_hal_common_annibale",
+                "libcodec2_aidl_annibale",
                 "libutils",
                 "libcutils",
                 "liblog",
-                "libcodec2_vndk",
+                "libcodec2_vndk_annibale",
                 "android.hardware.media.c2-V1-ndk",
                 "libavservices_minijail",
                 "libbinder",
@@ -46368,11 +46661,11 @@ cc_prebuilt_binary {
                 "libaconfig_storage_read_api_cc",
                 "libbase",
                 "libcodec2",
-                "libcodec2_hal_common",
-                "libcodec2_vndk",
+                "libcodec2_hal_common_annibale",
+                "libcodec2_vndk_annibale",
                 "android.hardware.media.c2-V1-ndk",
                 "libbinder_ndk",
-                "libcodec2_aidl",
+                "libcodec2_aidl_annibale",
                 "libutils",
                 "libcutils",
                 "liblog",
@@ -46493,6 +46786,73 @@ cc_prebuilt_binary {
     },
     prefer: true,
     relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "vendor.xiaomi.hardware.misys.core-service",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hw/vendor.xiaomi.hardware.misys.core-service",
+            ],
+            shared_libs: [
+                "libbase",
+                "liblog",
+                "libutils",
+                "libbinder_ndk",
+                "vendor.xiaomi.hardware.misys.core-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "hypsys_vendor",
+    owner: "xiaomi",
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/bin/hypsys_vendor",
+            ],
+            shared_libs: [
+                "vendor.xiaomi.hardware.blackbox-V1-ndk",
+                "libmisight",
+                "libcutils",
+                "libcrypto",
+                "libz",
+                "libbase",
+                "liblog",
+                "libutils",
+                "libbinder_ndk",
+                "libjsoncpp",
+                "vendor.xiaomi.hardware.misys.core-V1-ndk",
+                "vendor.xiaomi.hardware.misys.common-V3-ndk",
+                "xiaomi.system.hypsys.common-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    strip: {
+        none: true,
+    },
+    prefer: true,
     soc_specific: true,
 }
 
@@ -49290,6 +49650,13 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib64/libq3dtools_adreno.so",
     symlink_target: "/vendor/lib64/egl/libq3dtools_adreno.so",
+}
+
+filegroup {
+    name: "annibale_miuicamera_apk",
+    srcs: [
+        "proprietary/product/priv-app/MiuiCamera/MiuiCamera.apk",
+    ],
 }
 
 filegroup {
